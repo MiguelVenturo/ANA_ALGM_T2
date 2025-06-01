@@ -4,7 +4,7 @@ print("-----> BIENVENIDOS AL MATRIZ DE COORDENADAS <-----")
 def generar_coordenadas(n):
     return [[random.randint(-81, 81), random.randint(-81, 81)] for _ in range(n)]
 def distancia(coord):
-    return math.sqrt(coord[0]**2 + coord[1]**2)
+    return math.sqrt(math.pow(coord[0],2) + math.pow(coord[1],2))
 def max_distancia_divide_y_venceras(coordenadas, inicio, fin):
     if inicio == fin:
         coord = coordenadas[inicio]
