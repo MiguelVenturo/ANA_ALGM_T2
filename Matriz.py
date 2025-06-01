@@ -2,7 +2,7 @@ import random
 import math
 print("-----> BIENVENIDOS AL MATRIZ DE COORDENADAS <-----")
 def generar_coordenadas(n):
-    return [[random.randint(-80, 80), random.randint(-80, 80)] for _ in range(n)]
+    return [[random.randint(-81, 81), random.randint(-80, 80)] for _ in range(n)]
 def distancia(coord):
     return math.sqrt(coord[0]**2 + coord[1]**2)
 def max_distancia_divide_y_venceras(coordenadas, inicio, fin):
